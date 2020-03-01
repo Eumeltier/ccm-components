@@ -1,0 +1,121 @@
+/*First level inside of Component, but outside of shadowroot*/
+/*#element {
+    display: block;
+    margin: auto;
+    border-style: solid;
+    border-width: 2px;
+    border-color: blue;
+}*/
+
+#element * {
+    margin: 0px;
+    padding: 0px;
+}
+
+.barContainer {
+    display: flex;
+    overflow: hidden;
+    background-color: white;
+}
+
+.controlBarContainer {
+    position: sticky;
+    top: 0;
+}
+
+.selected {
+    background-color: #ccfff5 !important;
+}
+
+.content {
+    display: inline-block;
+    min-width: fit-content;
+    height: fit-content;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.static {
+    text-align: center;
+    width: fit-content;
+    font-size: 18px;
+}
+
+.dynamic {
+    width: 100%;
+    font-size: 18px;
+}
+
+#selectedCellRange {
+    min-width: 130px;
+    font-weight: bold;
+}
+
+#formulaSign {
+    min-width: 30px;
+}
+
+#formula {
+    width: 100%;
+}
+
+.action {
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.action:hover {
+    background-color: lightgray;
+}
+
+/*Figure out how to use all available space of parent element without overlapping it.*/
+#tableContainer {
+    /*This restriction is not needed since i want to use the complete available parent width.*/
+    /*min-width: 540px;/*960px;*/
+    /*max-width: 960px;/*1920px;*/
+    /*min-height: 304px;/*540px;*/
+    /*max-height: 540px;/*1080px;*/
+    overflow: auto;
+    /*overflow: hidden;*/
+}
+
+.Table {
+    display: table;
+    /*border-collapse: collapse;*/
+    table-layout: fixed;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.TableRow {
+    display: table-row;
+}
+
+.TableHeading {
+    display: table-header-group;
+}
+
+.TableBody {
+    display: table-row-group;
+}
+
+.TableFoot {
+    display: table-footer-group;
+}
+
+.TableCell, .TableHead {
+    display: table-cell;
+    border: 1px solid;
+    width: 80px;
+    height: 20px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.indexCell {
+    font-weight: bold;
+    font-size: 18px;
+    background-color: lightgray;
+}
