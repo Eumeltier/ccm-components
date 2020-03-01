@@ -6,7 +6,7 @@
         ccm: "https://ccmjs.github.io/ccm/versions/ccm-20.0.0.js",
         
         config: {
-            css: ["ccm.load", { url: "../resources/css/spreadsheet.css", type: "css" }],
+            css: ["ccm.load", { url: "http://www2.inf.h-brs.de/~alysek2s/spreadsheet/resources/css/spreadsheet.css", type: "css" }],
 			mathjs: ["ccm.load", { url: "https://unpkg.com/mathjs@6.3.0/dist/math.min.js", type: "js"}],
             rxCore: ["ccm.load", { url: "https://dev.jspm.io/rxjs@6/_esm2015/index", type: "module" }],
             rxOps: ["ccm.load", { url: "https://dev.jspm.io/rxjs@6/_esm2015/operators", type: "module" }]
