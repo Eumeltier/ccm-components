@@ -1,3 +1,10 @@
+/**
+ * @overview Spreadsheet component for table calculation
+ * @author Alexander Lysek <a.lysek@gmx.de> 2020
+ * @license The MIT License (MIT)
+ * @version latest (1.0.0)
+ */
+
 (function () {
     let component = {
         name: "spreadsheet",
